@@ -34,14 +34,14 @@ class SlackMessenger(L.LightningFlow):
 
         """
         super().__init__()
-        self.client = WebClient(token=token)
-        self.logger = logging.getLogger(__name__)
         self.channel_id = channel_id
+        self.token = token
 
     def run(self, message):
         try:
             # Call the conversations.list method using the WebClient
-            result = self.client.chat_postMessage(
+            client = WebClient(token=self.token)
+            result = client.chat_postMessage(
                 channel=self.channel_id,
                 text=message
             )
