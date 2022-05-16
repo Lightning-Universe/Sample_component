@@ -1,6 +1,5 @@
-# Lightning component template
-
-Template for creating a lightning component
+# Slack messenger component
+Component to send a message on Slack
 
 ## Use the component
 
