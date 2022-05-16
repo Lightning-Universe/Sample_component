@@ -1,3 +1,5 @@
+<!---:lai-name: Slack Messenger--->
+
 # Slack messenger component
 Component to send a message on Slack
 
