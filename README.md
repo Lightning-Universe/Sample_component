@@ -3,6 +3,7 @@ Component to send a message on Slack
 
 ## Use the component
 
+<!---:lai-use:--->
 ```python
 import lightning as L
 from slack import SlackMessenger
@@ -19,7 +20,7 @@ class YourComponent(L.LightningFlow):
 ## install
 Use these instructions to install:
 
-<!---:install:--->
+<!---:lai-install:--->
 ```bash
 git clone https://github.com/PyTorchLightning/LAI-slack-messenger.git
 cd LAI-slack-messenger
