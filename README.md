@@ -15,3 +15,14 @@ class YourComponent(L.LightningFlow):
     def run(self):
         self.slack_messenger.run('hello from ⚡ lit slack ⚡')
 ```
+
+## install
+Use these instructions to install:
+
+<!---:install:--->
+```bash
+git clone https://github.com/PyTorchLightning/LAI-slack-messenger.git
+cd LAI-slack-messenger
+pip install -r requirements.txt
+pip install -e .
+```
