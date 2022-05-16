@@ -1,5 +1,7 @@
-# Slack messenger component
-Component to send a message on Slack
+# Lightning component template
+
+Template for creating a lightning component.
+Implements a component to send a slack message for demo purposes.
 
 ## Use the component
 
