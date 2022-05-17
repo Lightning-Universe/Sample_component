@@ -49,6 +49,16 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-py${{ matrix.python-version }}-
 
+    - name: Clone lightning repo
+      uses: actions/checkout@v3
+      with:
+        repository: PyTorchLightning/lightning
+        token: ${{ secrets.PAT_GHOST }}
+        ref: 'master'
+      run:
+        git clone https://github.com/PyTorchLightning/lightning.git
+        cd lightning && pip install -r requirements.txt && pip install -e .
+
     - name: Install dependencies
       run: |
         python --version
