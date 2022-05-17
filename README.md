@@ -1,9 +1,21 @@
 <!---:lai-name: Slack Messenger--->
 
-# Lightning component template
+<div align="center">
+<img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/lai.png" width="200px">
 
-Template for creating a lightning component.
-Implements a component to send a slack message for demo purposes.
+A Lightning component to send a message on Slack
+______________________________________________________________________
+
+![Tests](https://github.com/PyTorchLightning/LAI-slack-messenger/actions/workflows/ci-testing.yml/badge.svg)
+
+</div>
+
+# About
+
+This component lets you send a message on Slack from a Lightning app.
+
+
+----
 
 ## Use the component
 
