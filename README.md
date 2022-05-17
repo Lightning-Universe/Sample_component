@@ -10,8 +10,6 @@ ______________________________________________________________________
 
 </div>
 
-----
-
 # About
 This component lets you send a message on Slack from a Lightning app.
 
