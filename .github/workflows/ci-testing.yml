@@ -56,8 +56,8 @@ jobs:
         token: ${{ secrets.PAT_GHOST }}
         ref: 'master'
       run:
-        git clone https://github.com/PyTorchLightning/lightning.git
-        cd lightning && pip install -r requirements.txt && pip install -e .
+        pip install -r requirements.txt
+        pip install -e .
 
     - name: Install dependencies
       run: |
