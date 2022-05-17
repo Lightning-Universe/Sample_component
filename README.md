@@ -3,7 +3,7 @@
 # Slack messenger component
 Component to send a message on Slack
 
-![Tests](https://github.com/PyTorchLightning/LAI-slack-messenger/actions/workflows/ci_testing.yml/badge.svg)
+![Tests](https://github.com/PyTorchLightning/LAI-slack-messenger/actions/workflows/ci-testing.yml/badge.svg)
 
 
 ## Use the component
