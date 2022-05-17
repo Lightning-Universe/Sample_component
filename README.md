@@ -1,10 +1,18 @@
 <!---:lai-name: Slack Messenger--->
 
-# Slack messenger component
-Component to send a message on Slack
+<div align="center">
+<img src="https://lightning.ai/static/media/logo-with-text.9c553257ab7566c17f2d9c2101dedb5c.svg" width="200px">
 
 ![Tests](https://github.com/PyTorchLightning/LAI-slack-messenger/actions/workflows/ci-testing.yml/badge.svg)
 
+</div>
+
+----
+
+# Slack messenger component
+Component to send a message on Slack
+
+----
 
 ## Use the component
 
