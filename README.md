@@ -1,7 +1,10 @@
 <!---:lai-name: Slack Messenger--->
 
 <div align="center">
-<img src="https://lightning.ai/static/media/logo-with-text.9c553257ab7566c17f2d9c2101dedb5c.svg" width="200px">
+<img src="https://pl-bolts-doc-images.s3.us-east-2.amazonaws.com/lai.png" width="200px">
+
+A Lightning component to send a message on Slack
+______________________________________________________________________
 
 ![Tests](https://github.com/PyTorchLightning/LAI-slack-messenger/actions/workflows/ci-testing.yml/badge.svg)
 
@@ -9,8 +12,9 @@
 
 ----
 
-# Slack messenger component
-Component to send a message on Slack
+# About
+This component lets you send a message on Slack from a Lightning app.
+
 
 ----
 
