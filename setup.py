@@ -10,6 +10,6 @@ setup(
     author_email='',
     # REPLACE WITH YOUR OWN GITHUB PROJECT LINK
     url='https://github.com/PyTorchLightning/lightning-component-template',
-    install_requires=['numpy'],
+    install_requires=[],
     packages=find_packages(),
 )
