@@ -21,7 +21,7 @@ This component lets you send a message on Slack from a Lightning app.
 <!---:lai-use:--->
 ```python
 import lightning as L
-from slack import SlackMessenger
+from lit_slack import SlackMessenger
 
 class YourComponent(L.LightningFlow):
     def __init__(self):
