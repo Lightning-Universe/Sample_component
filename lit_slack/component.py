@@ -1,4 +1,3 @@
-import logging
 import lightning as L
 
 from slack_sdk import WebClient
@@ -29,8 +28,8 @@ class SlackMessenger(L.LightningFlow):
                 def run(self):
                     self.slack_messenger.run('hello from ⚡ lit slack ⚡')
 
-        token: "Bot User OAuth Token" found under https://api.slack.com/apps/YOUR-APP_ID/install-on-team
-        channel_id: Open slack > find a channel > get channel details > copy channel ID at the bottom
+        token: "Bot User OAuth Token" found at https://api.slack.com/apps/YOUR-APP_ID/install-on-team
+        channel_id: Open slack > find channel > get channel details > copy channel ID at the bottom
 
         """
         super().__init__()
