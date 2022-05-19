@@ -1,5 +1,5 @@
 import os
-from slack.component import SlackMessenger
+from lit_slack.component import SlackMessenger
 
 
 def test_send_message():
