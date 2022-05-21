@@ -16,9 +16,8 @@ def test_send_message():
 @pytest.mark.parametrize(
     "real_component, test_component_pip_name",
     [
-        ("lightning/LAI-slack-messenger", "lit-slack"),
         (
-            "git+https://github.com/PyTorchLightning/LAI-slack-messenger.git@14f333456ffb6758bd19458e6fa0bf12cf5575e1",
+            f"git+https://{os.environ['GH_TOKEN']}@github.com/PyTorchLightning/LAI-slack-messenger.git@14f333456ffb6758bd19458e6fa0bf12cf5575e1",
             "lit-slack",
         ),
     ],
