@@ -33,6 +33,9 @@ class YourComponent(L.LightningFlow):
 
     def run(self):
         self.slack_messenger.send_message('hello from ⚡ lit slack ⚡')
+        
+app = L.LightningApp(YourComponent())
+
 ```
 
 ## install
