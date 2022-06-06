@@ -38,12 +38,12 @@ class SlackMessenger(L.LightningFlow):
 
 
     def send_message(self, message):
-        self.run('send_message', message)
+        return self.run('send_message', message)
 
 
     def run(self, action: str, message: str):
         if action == 'send_message':
-            self._send_message(message)
+            return self._send_message(message)
 
 
     def _send_message(self, message):
