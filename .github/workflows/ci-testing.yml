@@ -49,7 +49,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-py${{ matrix.python-version }}-
 
-    - name: Clone Template React UI Repo
+    - name: Clone Lightning Repo
       uses: actions/checkout@v3
       with:
         repository: PyTorchLightning/lightning
