@@ -19,7 +19,7 @@ jobs:
         python-version: [3.9]
 
     # Timeout: https://stackoverflow.com/a/59076067/4521646
-    timeout-minutes: 35
+    timeout-minutes: 15
 
     steps:
     - uses: actions/checkout@v2
@@ -28,27 +28,10 @@ jobs:
       with:
         python-version: ${{ matrix.python-version }}
 
-    #- name: Clone Lightning Repo
-    #  uses: actions/checkout@v3
-    #  with:
-    #    repository: PyTorchLightning/lightning
-    #    token: ${{ secrets.PAT_GHOST }}
-    #    ref: 'master'
-    #    path: lightning
-
-    #- name: Install Lightning
-    #  run: |
-    #    cd lightning
-    #    pip install -r requirements.txt
-    #    pip install -e .
-    #  shell: bash
-
-    - name: Install dependencies
+    - name: Install package & dependencies
       run: |
-        python --version
         pip --version
-        pip install --requirement requirements.txt --upgrade --quiet --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
-        pip install --requirement tests/requirements.txt --quiet
+        pip install -e . -r tests/requirements.txt -U -q --find-links https://download.pytorch.org/whl/cpu/torch_stable.html
         pip list
       shell: bash
 

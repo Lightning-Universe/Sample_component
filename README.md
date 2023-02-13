@@ -45,6 +45,5 @@ Use these instructions to install:
 ```bash
 git clone https://github.com/PyTorchLightning/LAI-slack-messenger.git
 cd LAI-slack-messenger
-pip install -r requirements.txt
 pip install -e .
 ```
