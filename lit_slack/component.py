@@ -1,5 +1,4 @@
 import lightning as L
-
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
 
@@ -36,24 +35,18 @@ class SlackMessenger(L.LightningFlow):
         self.channel_id = channel_id
         self.token = token
 
-
     def send_message(self, message):
-        return self.run('send_message', message)
-
+        return self.run("send_message", message)
 
     def run(self, action: str, message: str):
-        if action == 'send_message':
+        if action == "send_message":
             return self._send_message(message)
-
 
     def _send_message(self, message):
         try:
             # Call the conversations.list method using the WebClient
             client = WebClient(token=self.token)
-            result = client.chat_postMessage(
-                channel=self.channel_id,
-                text=message
-            )
+            result = client.chat_postMessage(channel=self.channel_id, text=message)
             return result
 
         except SlackApiError as e:
