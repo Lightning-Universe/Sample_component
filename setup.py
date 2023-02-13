@@ -13,13 +13,13 @@ def _load_requirements(path_dir: str = _PATH_ROOT, file_name: str = "requirement
 
 
 setup(
-    name="lit_slack",
-    version="0.0.0",
+    name="lit-slack",
+    version="0.1.0",
     description="Describe Your Cool Component",
     author="",
     author_email="",
     # REPLACE WITH YOUR OWN GITHUB PROJECT LINK
     url="https://github.com/PyTorchLightning/lightning-component-template",
     install_requires=_load_requirements(),
-    packages=find_packages(exclude="tests"),
+    packages=find_packages(exclude=["tests", "tests.*"]),
 )
