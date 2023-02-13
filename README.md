@@ -6,6 +6,8 @@
 A Lightning component to send a message on Slack
 ______________________________________________________________________
 
+[![Lightning](https://img.shields.io/badge/-Lightning-792ee5?logo=pytorchlightning&logoColor=white)](https://lightning.ai)
+[![license](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/Lightning-AI/metrics/blob/master/LICENSE)
 ![Tests](https://github.com/PyTorchLightning/LAI-slack-messenger/actions/workflows/ci-testing.yml/badge.svg)
 
 </div>
@@ -45,6 +47,5 @@ Use these instructions to install:
 ```bash
 git clone https://github.com/PyTorchLightning/LAI-slack-messenger.git
 cd LAI-slack-messenger
-pip install -r requirements.txt
 pip install -e .
 ```
