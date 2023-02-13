@@ -1,2 +1,2 @@
-slack-sdk==3.16.1
+slack-sdk==3.19.5
 lightning>=1.9.0, <2.0.0
