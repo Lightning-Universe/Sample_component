@@ -16,10 +16,11 @@ setup(
     name="lit-slack",
     version="0.1.0",
     description="Describe Your Cool Component",
-    author="",
-    author_email="",
+    author="Lightning-AI",
+    author_email="name@lightning.ai",
     # REPLACE WITH YOUR OWN GITHUB PROJECT LINK
-    url="https://github.com/PyTorchLightning/lightning-component-template",
+    url="https://github.com/Lightning-Universe/Sample_component",
+    long_description="""Some long description or load readme""",
     install_requires=_load_requirements(),
     packages=find_packages(exclude=["tests", "tests.*"]),
 )
